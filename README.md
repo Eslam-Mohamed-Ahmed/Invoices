@@ -2,12 +2,7 @@
 # Invoices
 =======
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# invoices" 
->>>>>>> 18f4f86 (first upload)
-
-
-
+Invoices App: Developed a web-based application for generating and managing invoices.
 
 ![image alt](https://github.com/Eslam-Mohamed-Ahmed/Invoices/blob/904667c10b8e375285325b2a696282cadc38aeb1/capture_20240612143246702.bmp)
 
