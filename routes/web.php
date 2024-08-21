@@ -6,6 +6,9 @@ use App\Http\Controllers\InvoicesAttachmentsController;
 use App\Http\Controllers\InvoicesController;
 use App\Http\Controllers\InvoicesDetailsController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
+
 use App\Http\Controllers\SectionsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InvoicesArchiveController;
@@ -23,6 +26,10 @@ use App\Http\Controllers\InvoicesArchiveController;
 
 Route::get('/', function () {
     return view('auth.login');
+});
+
+Route::get('/register', function () {
+    return view('auth.register');
 });
 
 
@@ -66,6 +73,12 @@ Route::resource('/products/store'        , ProductsController::class );
 Route::resource('/products/update'       , ProductsController::class );
 Route::resource('/home/products/destroy' , ProductsController::class );
 
+Route::group(['middleware' => ['auth']], function() {
+
+    Route::resource('users', UserController::class);
+    Route::resource('roles', RoleController::class);
+
+});
 
 
 Route::get('/{page}'             , [AdminController::class]);

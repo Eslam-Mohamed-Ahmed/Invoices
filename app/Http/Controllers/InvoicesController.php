@@ -93,8 +93,15 @@ class InvoicesController extends Controller
 
         //send invoice to user email when store invoice
         $user = User::first();
-        Notification::send($user, new SendInvoice($invoice_id));
-        
+        // $email = $user->email;
+        // $invoices = Invoices::latest()->first();
+        // Notification::send($user, new SendInvoice($invoice_id));
+        // $user->email->notify(new SendInvoice($invoice_id));
+
+        // Notification::route('mail' , 'eslamxxx555xxx@gmail.com')
+        //              ->notify(new SendInvoice($invoice_id));
+
+
         session()->flash('Add', 'تم اضافة الفاتورة بنجاح');
         return back();
     }

@@ -1,0 +1,25 @@
+[2024-08-01 19:22:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:210)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(135): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(122): Illuminate\\Log\\LogManager->get(NULL)
+#2 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#3 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(274): Illuminate\\Log\\LogManager->error('RecursiveDirect...', Array)
+#4 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(454): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ValueError))
+#5 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(157): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ValueError))
+#6 D:\\xampp\\htdocs\\final-projects\\Invoices\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2024-08-01 19:22:08] laravel.ERROR: RecursiveDirectoryIterator::__construct(): Argument #1 ($directory) cannot be empty {"exception":"[object] (ValueError(code: 0): RecursiveDirectoryIterator::__construct(): Argument #1 ($directory) cannot be empty at D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php:43)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php(43): RecursiveDirectoryIterator->__construct('', 4096)
+#1 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\symfony\\finder\\Finder.php(793): Symfony\\Component\\Finder\\Iterator\\RecursiveDirectoryIterator->__construct('', 4096, false)
+#2 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\symfony\\finder\\Finder.php(674): Symfony\\Component\\Finder\\Finder->searchInDirectory('')
+#3 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(86): Symfony\\Component\\Finder\\Finder->getIterator()
+#4 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(63): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getConfigurationFiles(Object(Illuminate\\Foundation\\Application))
+#5 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#6 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(242): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 D:\\xampp\\htdocs\\final-projects\\Invoices\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#9 D:\\xampp\\htdocs\\final-projects\\Invoices\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 
